@@ -122,21 +122,6 @@ namespace EchKode.PBMods.BattleLog
 				systems.Add(installee);
 			}
 
-			fi = AccessTools.Field(feature.GetType(), $"_{kind}SystemNames");
-			if (fi != null)
-			{
-				var names = (List<string>)fi.GetValue(feature);
-				var name = installee.GetType().FullName;
-				if (insert)
-				{
-					names.Insert(i, name);
-				}
-				else
-				{
-					names.Add(name);
-				}
-			}
-
 			if (ModLink.Settings.IsLoggingEnabled(ModLink.ModSettings.LoggingFlag.System))
 			{
 				var fmt = insert
