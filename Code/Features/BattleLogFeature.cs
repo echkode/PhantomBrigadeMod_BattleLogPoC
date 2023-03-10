@@ -1,4 +1,7 @@
-﻿namespace EchKode.PBMods.BattleLog
+﻿// Copyright (c) 2023 EchKode
+// SPDX-License-Identifier: BSD-3-Clause
+
+namespace EchKode.PBMods.BattleLog
 {
 	sealed class BattleLogFeature : Feature
 	{

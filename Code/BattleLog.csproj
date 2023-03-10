@@ -61,6 +61,7 @@
   <ItemGroup>
     <Compile Include="BattleLogWindow.cs" />
     <Compile Include="Features\BattleLogFeature.cs" />
+    <Compile Include="GlobalSuppressions.cs" />
     <Compile Include="ModLink.cs" />
     <Compile Include="ModSettings.cs" />
     <Compile Include="Patch.cs" />
