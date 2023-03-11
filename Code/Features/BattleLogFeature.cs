@@ -1,6 +1,8 @@
 ﻿// Copyright (c) 2023 EchKode
 // SPDX-License-Identifier: BSD-3-Clause
 
+using PhantomBrigade;
+
 namespace EchKode.PBMods.BattleLog
 {
 	sealed class BattleLogFeature : Feature
@@ -19,7 +21,7 @@ namespace EchKode.PBMods.BattleLog
 					return;
 				}
 
-				var gcs = gc.m_stateDict["game"];
+				var gcs = gc.m_stateDict[GameStates.game];
 				var gameSystems = gcs.m_systems[0];
 				var installee = new BattleLogFeature();
 				SystemInstaller.InstallAtEnd(gameSystems, installee);
